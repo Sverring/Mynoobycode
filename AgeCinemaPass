@@ -1,0 +1,13 @@
+/* Условия таковы, что в кино пускают с 12 лет, если меньше, то только со взрослым.
+Ниже была проведена проверка и код работает */
+var AgePass = Number;
+var AgePassRestriction = 12;
+var Adult = true;
+AgePass>=AgePassRestriction||Adult;
+true
+var AgePass = 11;
+AgePass>=AgePassRestriction||Adult;
+true
+AgePass = 8;
+AgePass>=AgePassRestriction||Adult;
+true
