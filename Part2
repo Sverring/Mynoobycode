@@ -15,3 +15,9 @@ var firstLetterUpper = firstLetter.toUpperCase();
 var slicedLowerString = lowerString.slice(1);
 firstLetterUpper+slicedLowerString;
 "Hello, world!"
+
+//Эта же задача решается намного проще. Сразу берем первый символ, устанавливаем верхний регистр, прибавляем остаток строки через slice,
+и сразу же устанавливаем нижний регистр для строки.
+var SillyString = "HellO,WOrld!";
+SillyString[0].toUpperCase() + SillyString.slice(1).toLowerCase();
+"Hello,world!"
