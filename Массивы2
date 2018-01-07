@@ -40,3 +40,19 @@ Salat;
 (8) ["Oil", "Meat", "Egg", "Ham", "Soled Cucumbers", "Potato", "Souce", "Cheeze"]
 Методы unshift и shift добавляют и удаляют элементы с начала
 массива — так же как push и pop добавляют и удаляют элементы с конца.
+
+//Соединение двух массивов. (Array - массив) Метод Concat.
+var furryAnimals = ["Альпака-мазафака", "Кольцевой лёхмур", "Ауети"];
+var scalyAnimals = ["Удав","Мудзилла"];
+var FurryAndScalyAnimals = furryAnimals.concat (scalyAnimals);
+FurryAndScalyAnimals;
+(5) ["Альпака-мазафака", "Кольцевой лёхмур", "Ауети", "Удав", "Мудзилла"]
+furryAnimals;
+(3) ["Альпака-мазафака", "Кольцевой лёхмур", "Ауети"]
+scalyAnimals;
+(2) ["Удав", "Мудзилла"]
+//Соединение двух и более массивов
+var crazyAnimals = ["Ярик", "Водила"];
+var allAnimals = furryAnimals.concat (scalyAnimals,crazyAnimals);
+allAnimals;
+(7) ["Альпака-мазафака", "Кольцевой лёхмур", "Ауети", "Удав", "Мудзилла", "Ярик", "Водила"]
