@@ -24,3 +24,21 @@ var nickname = "Больжедор";
 undefined
 nickname [3];
 "ь"
+
+/* Поиск определенного символа в словах.По условию надо было найти каждый второй символ, но я забыл, что отсчет идет с 0, поэтому получалась сначала околесица */
+var CodeWord1 = "обернись";
+undefined
+var CodeWord2 = "неужели";
+undefined
+var CodeWord3 = "огурцы";
+undefined
+var CodeWord4 = "липкие";
+undefined
+var CodeWord5 = "?!";
+undefined
+CodeWord1[2]+CodeWord2[2]+CodeWord3[2]+CodeWord4[2]+CodeWord5[2];
+"еуупundefined"
+CodeWord1[2] + CodeWord2[2] + CodeWord3[2] + CodeWord4[2] + CodeWord5[2];
+"еуупundefined"
+CodeWord1[1]+CodeWord2[1]+CodeWord3[1]+CodeWord4[1]+CodeWord5[1];
+"беги!"
