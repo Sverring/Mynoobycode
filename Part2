@@ -1,0 +1,17 @@
+// Перевод строк в заглавный и строчный реестр
+"Hello, world!".toUpperCase();
+"HELLO, WORLD!"
+"Hello, world!".toLowerCase();
+"hello, world!"
+"HellO, WOrld
+
+// Условие: только первая буква верхний регистр.
+/* Берем строку, делаем полностью нижний регистр через toLowerCase, выделяем первую букву из строчки с помошью [0],
+Делаем верхний регистр первой буквы через toUpperCase, вырезаем строку без первой буквы через slice (1); и складываем значения */
+var sillyString = "HellO, WOrld!";
+var lowerString = sillyString.toLowerCase();
+var firstLetter = lowerString[0];
+var firstLetterUpper = firstLetter.toUpperCase();
+var slicedLowerString = lowerString.slice(1);
+firstLetterUpper+slicedLowerString;
+"Hello, world!"
