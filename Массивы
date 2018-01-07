@@ -35,3 +35,32 @@ dinosaurs[7]= "Диплодок";
 dinosaurs[8]= "Компсогнат";
 dinosaurs;
 (9) ["Тираннозавр", "Велоцираптор", "Стегозавр", "Трицератопс", "Брахиозавр", "Птеранодон", "Апатозавр", "Диплодок", "Компсогнат"]
+
+
+//А теперь с помощью массива делаем салат
+var Salat = ["Egg", "Ham", "Soled Cucumbers", "Potato","Souce"];
+Salat [3];
+"Potato"
+Salat [0];
+"Egg"
+Salat.length;
+5
+Salat [Salat.length-1];
+"Souce"
+Salat;
+(5) ["Egg", "Ham", "Soled Cucumbers", "Potato", "Souce"]
+// делаем вызов метода push, чтобы в конец массива добавить еще ингредиентов и unshift для добавления в начало.
+Salat.push ("Cheeze");
+6
+Salat.push ("Tomato");
+7
+Salat.push ("Oil");
+8
+Salat.length;
+8
+Salat;
+(8) ["Egg", "Ham", "Soled Cucumbers", "Potato", "Souce", "Cheeze", "Tomato", "Oil"]
+Salat.unshift ("Meat");
+9
+Salat;
+(9) ["Meat", "Egg", "Ham", "Soled Cucumbers", "Potato", "Souce", "Cheeze", "Tomato", "Oil"]
