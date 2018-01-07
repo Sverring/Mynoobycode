@@ -1,0 +1,42 @@
+var Salat = ["Egg", "Ham", "Soled Cucumbers", "Potato","Souce"];
+Salat [3];
+"Potato"
+Salat [0];
+"Egg"
+Salat.length;
+5
+Salat [Salat.length-1];
+"Souce"
+
+Salat;
+(5) ["Egg", "Ham", "Soled Cucumbers", "Potato", "Souce"]
+Salat.push ("Cheeze");
+6
+Salat.push ("Tomato");
+7
+Salat.push ("Oil");
+8
+Salat.length;
+8
+Salat;
+(8) ["Egg", "Ham", "Soled Cucumbers", "Potato", "Souce", "Cheeze", "Tomato", "Oil"]0: "Egg"1: "Ham"2: "Soled Cucumbers"3: "Potato"4: "Souce"5: "Cheeze"6: "Tomato"7: "Oil"length: 8__proto__: Array(0)
+Salat.unshift ("Meat");
+9
+Salat;
+(9) ["Meat", "Egg", "Ham", "Soled Cucumbers", "Potato", "Souce", "Cheeze", "Tomato", "Oil"]0: "Meat"1: "Egg"2: "Ham"3: "Soled Cucumbers"4: "Potato"5: "Souce"6: "Cheeze"7: "Tomato"8: "Oil"length: 9__proto__: Array(0)
+var lastProduct = Salat.pop();
+lastProduct;
+"Oil"
+Salat;
+(8) ["Meat", "Egg", "Ham", "Soled Cucumbers", "Potato", "Souce", "Cheeze", "Tomato"]
+Salat.pop ();
+"Tomato"
+Salat;
+(7) ["Meat", "Egg", "Ham", "Soled Cucumbers", "Potato", "Souce", "Cheeze"]
+
+Salat.unshift (lastProduct);
+9
+Salat;
+(8) ["Oil", "Meat", "Egg", "Ham", "Soled Cucumbers", "Potato", "Souce", "Cheeze"]
+Методы unshift и shift добавляют и удаляют элементы с начала
+массива — так же как push и pop добавляют и удаляют элементы с конца.
