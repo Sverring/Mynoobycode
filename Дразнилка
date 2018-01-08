@@ -33,3 +33,21 @@ Randomresult;
 динить строки без пробела.*/
 var Randomresult = ["У тебя", randomBodyPart, "словно", randomAdjective, randomWord+"!!!"].join (" "); 
 Randomresult;
+
+//Изощренная дразнилка
+var randomBodyParts = ["вагина", "очко", "яйца"];
+var randomAdjectives = ["вонючая", "унылая", "грязная"];
+var randomAnimalBodyParts = ["ухо", "горло","член", "глаз", "нога"];
+var randomAnimals = ["ослихи", "тигра", "мыши", "овцы", "козла"];
+var randomBodyPart = randomBodyParts [Math.floor (Math.random ()*randomBodyParts.length)];
+var randomAdjective = randomAdjectives [Math.floor (Math.random ()*randomAdjectives.length)];
+var randomAnimalBodyPart = randomAnimalBodyParts [Math.floor (Math.random ()*randomAnimalBodyParts.length)];
+var randomAnimal = randomAnimals [Math.floor (Math.random ()*randomAnimals.length)];
+var Result = ["У тебя"+" "+randomBodyPart+" "+"еще более "+randomAdjective+" ,чем "+randomAnimalBodyPart+" у "+randomAnimal];
+Result;
+
+//Результат можно записать и через .join
+var Result = ["У тебя",randomBodyPart,"еще более",randomAdjective+",чем",randomAnimalBodyPart,"у",randomAnimal+"."].join(" ");
+Result;
+"У тебя яйца еще более вонючая,чем глаз у овцы."
+
