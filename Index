@@ -1,0 +1,10 @@
+// indexOf показывает индекс значения, а [] с индексом показывают само значение.
+var Colours = ["Green", "Black", "White"];
+Colours.indexOf ("Black");
+1
+Colours.indexOf ("White");
+2
+Colours[2];
+"White"
+Colours[1];
+"Black"
