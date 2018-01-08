@@ -8,6 +8,6 @@ var randomAdjective = randomAdjectives [Math.floor (Math.random ()*3)];
 //Выбираем слово из третьего массива:
 var randomWord = randomWords [Math.floor(Math.random ()*5)];
 //Соединяем все в предложение:
-var Randomresult = "У тебя "+ randomBodyPart+" словно "+
-+randomAdjective+" "+randomWord+"!!!"; 
+var Randomresult = "У тебя "+ randomBodyPart+" словно "+randomAdjective+" "+randomWord+"!!!"; 
 Randomresult;
+"У тебя очко словно грязная мышь!!!"
