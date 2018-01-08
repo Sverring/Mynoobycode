@@ -11,3 +11,19 @@ var randomWord = randomWords [Math.floor(Math.random ()*5)];
 var Randomresult = "У тебя "+ randomBodyPart+" словно "+randomAdjective+" "+randomWord+"!!!"; 
 Randomresult;
 "У тебя очко словно грязная мышь!!!"
+
+/* Второй раз ,но с использованием .length */
+var randomBodyParts = ["вагина", "очко", "яйца"];
+var randomAdjectives = ["вонючая", "унылая", "грязная"];
+var randomWords = ["ослиха", "куртизанка", "мышь", "давалка", "булка"];
+// Выбираем из первого массива:
+var randomBodyPart = randomBodyParts [Math.floor (Math.random ()*randomBodyParts.length)];
+//Выбираем слово из второго массива:
+var randomAdjective = randomAdjectives [Math.floor (Math.random ()*randomAdjectives.length)];
+//Выбираем слово из третьего массива:
+var randomWord = randomWords [Math.floor(Math.random ()*randomWords.length)];
+//Соединяем все в предложение:
+var Randomresult = "У тебя "+ randomBodyPart+" словно "+randomAdjective+" "+randomWord+"!!!"; 
+Randomresult;
+"У тебя яйца словно вонючая давалка!!!"
+// Использование array.length (который мы пишем, умножая на Math.random) позволяет не менять код, если длина массива изменится.
