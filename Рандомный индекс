@@ -1,0 +1,46 @@
+// Math.random выдает случайное число от 0 до 1.
+Math.random ();
+0.4154783442280128
+Math.random ();
+0.948866260928471
+// Чтобы Math.random выдавал число от 1 до 10, умножаем на 10.
+Math.random ()*10;
+2.0589770967800614
+Math.random ()*10;
+2.1170210627938757
+Math.random ()*10;
+9.931733639182793
+// Метод Math.floor округляет числа (просто отбрасывает числа после точки)
+Math.floor (9.93452345);
+9
+Math.floor(Math.random ()*10);
+7
+// Получение случайного индекса.
+var TodayMood=["Пирожок","Бука", "Бревно", "Панда", "Дуралей", "Дурень", "Мудозвон", "Ушлепок", "Ярик", "Опасность"];
+var RandomMood= Math.floor(Math.random ()*10);
+TodayMood[RandomMood];
+"Дуралей"
+TodayMood[RandomMood];
+"Дуралей"
+TodayMood[RandomMood];
+"Дуралей"
+TodayMood[RandomMood];
+"Дуралей"
+// Постоянный повтор был , потому что это значение присвоилось переменной RandomMood, и чтобы использовать рандом,
+надо использовать метол=д напрямую.
+TodayMood[Math.floor(Math.random()*10)];
+"Пирожок"
+TodayMood[Math.floor(Math.random()*10)];
+"Опасность"
+TodayMood[Math.floor(Math.random()*10)];
+"Опасность"
+TodayMood[Math.floor(Math.random()*10)];
+"Дуралей"
+TodayMood[Math.floor(Math.random()*10)];
+"Дуралей"
+TodayMood[Math.floor(Math.random()*10)];
+"Панда"
+TodayMood[Math.floor(Math.random()*10)];
+"Бука"
+TodayMood[Math.floor(Math.random()*10)];
+"Опасность"
