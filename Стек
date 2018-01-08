@@ -1,0 +1,28 @@
+var landmarks = [];
+// задача: добавление ориентиров в процессе
+landmarks.push ("My house");
+landmarks.push ("Road to the house");
+landmarks.push ("Flashing light");
+landmarks.push ("Leaking hydrant");
+landmarks.push ("Fire Station");
+landmarks.push ("My former school");
+landmarks.push ("Girlfriend House");
+7
+landmarks;
+(7) ["My house", "Road to the house", "Flashing light", "Leaking hydrant", "Fire Station", "My former school", "Girlfriend House"]
+landmarks.pop();
+"Girlfriend House"
+landmarks.pop();
+"My former school"
+landmarks.pop();
+"Fire Station"
+landmarks.pop();
+"Leaking hydrant"
+landmarks.pop();
+"Flashing light"
+landmarks.pop();
+"Road to the house"
+landmarks.pop();
+"My house"
+// Первым элементом было последний. Этот подход называется LIFO (Last in, First out). Когда же первым берется первый элемент,
+то это называется FIFO (First in, First out)
