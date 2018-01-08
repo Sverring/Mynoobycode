@@ -8,3 +8,6 @@ Colours[2];
 "White"
 Colours[1];
 "Black"
+//Если запрашиваемого элемента в массиве нет, то JS вернет значение -1.
+Colours.indexOf ("Purple");
+-1
