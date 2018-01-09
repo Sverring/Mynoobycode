@@ -1,0 +1,12 @@
+var Scores = {
+    Vlad: 0,
+    Ilya: 0,
+Boboshko: 0,
+Artur: 0
+};
+Scores.Vlad;
+0
+Scores.Vlad+=3;
+3
+Scores;
+{Vlad: 3, Ilya: 0, Boboshko: 0, Artur: 0}
