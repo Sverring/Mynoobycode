@@ -1,0 +1,17 @@
+// Учусь работать с объектами
+var Dog = {
+name:"Оладушек",
+age: 6,
+colour:"Белый",
+bark:"Гав гав, мазафака!"
+};
+var Cat = {
+name: "Гармония",
+age: 8,
+colour: "Черепаховый"
+};
+// Object.keys выводит все параметры заданной переменной в массив
+Object.keys (Dog);
+(4) ["name", "age", "colour", "bark"]
+Object.keys (Cat);
+(3) ["name", "age", "colour"]
