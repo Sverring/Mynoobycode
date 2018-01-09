@@ -15,3 +15,11 @@ Object.keys (Dog);
 (4) ["name", "age", "colour", "bark"]
 Object.keys (Cat);
 (3) ["name", "age", "colour"]
+// Добавление новых элементов объекта с нуля:
+var cat = {};
+cat ["legs"] = 3;
+cat ["name"] = "Гармония";
+cat ["colour"] = "Черепаховый"
+cat;
+{legs: 3, name: "Гармония", colour: "Черепаховый"}
+ 
