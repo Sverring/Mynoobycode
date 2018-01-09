@@ -1,0 +1,11 @@
+var Animals = [
+    {name: "Петух", species: "Обыкновенный"},
+    {name: "Пес", species: "Дворовый"},
+    {name: "Бык", species: "Бешеный"}
+];
+Animals;
+(3) [{…}, {…}, {…}]0: {name: "Петух", species: "Обыкновенный"}1: {name: "Пес", species: "Дворовый"}2: {name: "Бык", species: "Бешеный"}length: 3__proto__: Array(0)
+Animals [2];
+{name: "Бык", species: "Бешеный"}
+Animals [2]["species"];
+"Бешеный"
