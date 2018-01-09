@@ -1,0 +1,43 @@
+var Vlad = {name: "Vlad", age:22, luckyNumbers: [ 3,4,7,15]};
+var Ilya = {name: "Ilya", age:22, luckyNumbers: [2,6,8,13]};
+var Boboshko = {name: "Boboshko", age:22, luckyNumbers: [1,5,9,11]};
+var Turick = {name: "Turick", age:22, luckyNumbers:[10,12,14,16]};
+
+var Friends = [Vlad,Ilya,Boboshko,Turick];
+Friends [1];
+{name: "Ilya", age: 22, luckyNumbers: Array(4)}
+Friends [0].luckyNumbers[2];
+7
+Friends[2];
+{name: "Boboshko", age: 22, luckyNumbers: Array(4)}
+age:22
+luckyNumbers:Array(4)
+0:1
+1:5
+2:9
+3:11
+length:4
+__proto__:Array(0)
+name:"Boboshko"
+__proto__:Object
+Friends;
+(4) [{…}, {…}, {…}, {…}]
+0:{name: "Vlad", age: 22, luckyNumbers: Array(4)}
+1:{name: "Ilya", age: 22, luckyNumbers: Array(4)}
+2:{name: "Boboshko", age: 22, luckyNumbers: Array(4)}
+3:{name: "Turick", age: 22, luckyNumbers: Array(4)}
+length:4
+__proto__:Array(0)
+
+
+//Учет долгов
+var owedMoney = {};
+owedMoney["Jimmi"]=5;
+owedMoney["Anna"]=7;
+owedMoney["Jimmi"];
+5
+//Jimmi занял немного денег (+4);
+owedMoney["Jimmi"]+=3;
+8
+owedMoney;
+{Jimmi: 8, Anna: 7}
