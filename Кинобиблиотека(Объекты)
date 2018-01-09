@@ -24,3 +24,16 @@ findingNemo.duration;
 100
 findingNemo.actors[1];
 "Эллен Дедженерес"
+//Добавим новый фильм "Тачки" Сначала создадим переменную, а потом добавим как значение в movies.
+var cars = {
+releaseDate: 2006,
+duration: 117,
+actors: ["Оуэн Уилсон", "Бонни Хант", "Пол Ньюман"],
+format: "DVD"
+};
+cars;
+movies["Тачки"] = cars;
+{releaseDate: 2006, duration: 117, actors: Array(3), format: "DVD"}
+// Посмотрим теперь весь список фильмов.
+Object.keys (movies);
+(4) ["В поисках Немо", "Звездные войны: Эпизод VI - Возвращение джедая", "Гарри Поттер и Кубок огня", "Тачки"]
