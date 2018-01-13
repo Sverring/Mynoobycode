@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> My first local trueHTML web-page</title>
+    </head>
+ <body>
+<h1> Hello, World!</h1>
+<p> My <em>localhost</em> <strong>web-page</strong>.</p>
+<script>
+var name = "Ragnaros";
+console.log ("Hi, "+ name);
+if (name.length > 6) {
+	console.log ("Well, you have a long name, man!")
+}
+var name2 = "Uther";
+console.log ("Hi, "+ name2);
+if (name2.length > 6) {
+	console.log("Well, you have a long name, man!")
+}
+else { console.log ("You have a short name, bro.");
+}
+</script>
+</body>
+</html>
