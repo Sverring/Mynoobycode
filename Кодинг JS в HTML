@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> My first local trueHTML web-page</title>
+    </head>
+ <body>
+<h1> Hello, World!</h1>
+<p> My <em>localhost</em> <strong>web-page</strong>.</p>
+<script>
+var message = "Hello, World";
+console.log (message);
+</script>
+</body>
+</html>
+// в консоли сразу появляется вывод фразы "Hello,World" до того, как в консоле выполняется какая-либо операция
