@@ -23,3 +23,32 @@ else { console.log ("You have a short name, bro.");
 </script>
 </body>
 </html>
+
+
+//Здесь выполняется несколько условий: когда заходит под name папа, мама или я, выводится приветствие,
+в остальных случаях = как для незнакомца.
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> My first local trueHTML web-page</title>
+    </head>
+ <body>
+<h1> Hello, World!</h1>
+<p> My <em>localhost</em> <strong>web-page</strong>.</p>
+<script>
+var name = "Father";
+if (name === "Dmitrii") {
+	console.log ("Привет мне!");
+}
+	else if (name === "Father") {
+		console.log ("Привет,папа!");
+	} else if (name === "Mother") {
+		console.log ("Привет, мама!");
+	}
+ else {
+	console.log ("Привет, незнакомец!");
+}
+</script>
+</body>
+</html>
