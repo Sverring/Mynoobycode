@@ -8,6 +8,7 @@
 <h1> Hello, World!</h1>
 <p> My <em>localhost</em> <strong>web-page</strong>.</p>
 <script>
+// Суть задания была в том, чтобы заменить одни символы строки на другие. Чтобы на выводе получилось: "j4v4scr1pt 1s 4w3s0m3".
 const input = 'javascript is awesome';
 let output = '';
 
