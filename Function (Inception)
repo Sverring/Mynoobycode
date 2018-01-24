@@ -1,0 +1,8 @@
+sayHelloTo = function (name) {
+console.log ("Hello, " + name);
+};
+sayHelloTo ("Nick");
+VM340:2 Hello, Nick
+undefined
+sayHelloTo ("Anna");
+VM340:2 Hello, Anna
