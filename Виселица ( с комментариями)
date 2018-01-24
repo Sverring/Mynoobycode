@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Tengen Toppa Gurren Lagann Hangman!</title>
+    </head>
+ <body>
+<h1> Lets play!</h1>
+<script>
+/* сначала мы создаем массив со словами, которые
+будем использовать в игре "Виселица" */
+const words = ["kamina","simon","eko","kittan","boota","nia","viral","rossiu","dayakka","gimmy","darry","kiyoh","kinon", "kiyal","jorgun","balinbow","attenborough","lordgenome","leeron"];
+// Объявляем переменную,Которая будет определять случайное слово
+let word = words[ Math.floor(Math.random()* words.length)];
+// создаем итоговый массив, в котором будут выводится буквы
+let answerArray = [];
+    for (let i = 0; i < word.length; i++) {
+      answerArray[i] = "_";
+    }
+    //вводим переменную, которая будет проверять оставшееся количество букв в слове
+let remainingLetters = word.length;
+let remainingTurns = 10;
+
+/*Вводим игровой массив while */
+    while (remainingLetters > 0 && remainingTurns > 0) {
+
+      //Показываем состояние игры
+      alert(answerArray.join("_"));
+      // prompt сохраняет ответ игрока в переменной guess
+    let guess = prompt ("Guess letter or push Cancel for escape");
+    //далее 4 варианта развития событий
+    // игрок жмет "отмена"
+        if (guess === null) {
+          break;
+          // игрок не ввел букву нажав ОК или ввел несколько букв (поэтому если длина не равняется одной букве, выводится alert)
+        } else if (guess.length > 1) {
+          alert ("Please, enter only one letter.");
+          /* 4 вариант: игрок ввел нужную букву */
+        } else {
+          // перед циклом мы указываем, что даже Верхний регистр становится нижним
+          guess = guess.toLowerCase();
+          let guessIsContain;
+
+          for (var i = 0; i < word.length; i++) {
+            if(word[i] == guess) {
+              guessIsContain = true;
+            }
+          }
+
+          if (guessIsContain) {
+            for (var j = 0; j < word.length; j++) {
+              if (word[j] === guess) {
+                answerArray[j] = guess;
+                remainingLetters--
+              }
+            }
+          } else {
+            remainingTurns--;
+          }
+        }
+        // В последний раз отображается игровой массив
+    }
+    alert(answerArray.join (" "));
+    // Поздравление игрока с победой
+    if(remainingLetters == 0) {
+      alert("Well done! The conceived word is " + word);
+    } else if (remainingTurns == 0) {
+      alert("FUCK YOU");
+    }
+</script>
+</body>
+</html>
