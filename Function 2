@@ -1,0 +1,11 @@
+SW registered
+var drawSmiles = function (howManyTimes) {
+for (var i = 0; i < howManyTimes; i++) {
+console.log("^~^");
+}
+};
+drawSmiles (5);
+5 VM335:3  ^~^
+undefined
+drawSmiles (100);
+100 VM335:3  ^~^
