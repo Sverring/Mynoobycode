@@ -1,0 +1,9 @@
+var double = function (number) {
+return number * 2;
+};
+double (5);
+10
+double (10) + double (4);
+28
+double ( double (10));
+40
