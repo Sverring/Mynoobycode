@@ -1,0 +1,12 @@
+let fifthLetter = function (name) {
+   if (name.length < 5) {
+       return;
+   };
+
+return '5th letter of your name is ' + name[4] + '.';
+};
+undefined
+fifthLetter("Vladislav");
+"5th letter of your name is i."
+fifthLetter('Nick');
+undefined
