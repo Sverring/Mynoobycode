@@ -1,0 +1,23 @@
+let generateRandomInsult = function () {
+let randomBodyParts = ["глаз", "нос", "череп"];
+let randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+let randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+let pickRandomWord = function (words) {
+return words[Math.floor(Math.random() * words.length)  ];
+};
+// соединяем строки в случайное предложение
+let RandomString = 'У тебя ' + pickRandomWord(randomBodyParts) + ' словно ' + pickRandomWord(randomAdjectives) + ' ' + pickRandomWord(randomWords) + '!!!';
+return RandomString;
+};
+generateRandomInsult();
+"У тебя череп словно унылая мартышка!!!"
+generateRandomInsult();
+"У тебя нос словно вонючая мартышка!!!"
+generateRandomInsult();
+"У тебя глаз словно дурацкая мартышка!!!"
+generateRandomInsult();
+"У тебя череп словно вонючая мартышка!!!"
+generateRandomInsult();
+"У тебя нос словно вонючая мартышка!!!"
+generateRandomInsult();
+"У тебя глаз словно дурацкая муха!!!"
