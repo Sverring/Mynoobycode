@@ -1,0 +1,15 @@
+let medalForScore = function (score) {
+    if (score < 3) {
+       return "Бронзовая";
+    };
+    if (score < 7) {
+       return "Серебряная";
+    };
+    return "Золотая";
+};
+medalForScore (4);
+"Серебряная"
+medalForScore (8);
+"Золотая"
+medalForScore (1);
+"Бронзовая"
