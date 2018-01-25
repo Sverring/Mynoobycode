@@ -1,0 +1,20 @@
+let randomWords = [ 'Duplo', ' Mamka', 'Zebra','GuitarHero','Pedovka', 'Maslina','Ruckavichka'];
+let pickRandomWords = function (words) {
+return words[Math.floor(Math.random() * words.length)];
+};
+//функция позволяет делать, так скажем модель того, что ты хочешь сделать с переменной ,а потом ты просто подставляешь в функцию саму
+переменную. Вроде все понятно, как работает функция.
+pickRandomWords(randomWords);
+"Pedovka"
+pickRandomWords(randomWords);
+"Ruckavichka"
+pickRandomWords(randomWords);
+"Duplo"
+pickRandomWords(randomWords);
+"Ruckavichka"
+pickRandomWords(randomWords);
+"Ruckavichka"
+pickRandomWords(randomWords);
+"Zebra"
+pickRandomWords(randomWords);
+" Mamka"
