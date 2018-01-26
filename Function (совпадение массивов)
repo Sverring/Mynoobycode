@@ -1,0 +1,29 @@
+// console.log здесь для того, чтобы увидеть, как работает код
+// суть функции: проверка на совпадения двух массивов. Если они одинаковы и цифры идут в одном и том же порядке, то true.
+function areArraysSame (argument1, argument2) {
+         if (argument1.length !== argument2.length) {
+         console.log (' Первый проход');           
+return false;
+         };
+         if (argument1.length == argument2.length) {
+            for ( i = 0; i < argument1.length; i++) {
+                if (argument1[i] !== argument2[i]) {
+                console.log ('Второй проход');
+                return false;
+                };
+                if (argument1[i] == argument2[i]) {
+                   console.log ('Третий проход');
+                   return true;
+                };
+            };
+         };
+};
+areArraysSame ([1,2,3],[1,2,3]);
+Третий проход
+true
+areArraysSame ([1,2,3],[1,2,3,4]);
+Первый проход
+false
+areArraysSame ([1,2,3],[4,5,6]);
+Второй проход
+false
