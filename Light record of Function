@@ -1,0 +1,10 @@
+// такая запись называется функциональным выражением (переменная выражена явно)
+var double = function (number) {
+return number * 2;
+};
+
+But better to write this way:
+// такая запись называется объявлением фукции (переменная выражена неявно)
+function double(number) {
+return number * 2;
+}
