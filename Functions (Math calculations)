@@ -1,0 +1,7 @@
+function add ( argument1, argument2) {
+return argument1 + argument2;
+};
+function multiply (argument1,argument2) {
+return argument1 * argument2;
+};add ( multiply (36325, 9824),777);
+356857577
