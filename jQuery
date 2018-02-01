@@ -1,0 +1,29 @@
+// В этом коде мы задаем id заголовку h1, меняем его, при включении сайта вводим три своих хобби с помощью
+цикла и метода append (добавляет несколько элементов)
+Потом меняем заголовок и делаем ему анимацию.Исчезновение,появление, исчезновение со слайдом вверх, появление
+со слайдом сверху
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title> Изучаем DOM, Motherfucker!</title> 
+</head>
+<body> 
+<h1 id='main-heading'> Hello, dudes! </h1> 
+<script src='http://code.jquery.com/jquery-2.1.0.js'></script> 
+<script> 
+let headingElement = document.getElementById ('main-heading');
+console.log (headingElement.innerHTML);
+let newHeadingText = prompt ('Write new headline: ');
+headingElement.innerHTML = newHeadingText;
+$('#main-heading').text(newHeadingText); 
+
+// $('body').append('<p>This is new text</p>');
+for (let i=0; i<3; i++) {
+	let hobby = prompt ('Call one of the your hobbies');
+	$('body').append('<p>' + hobby + '</p>');
+}
+$('h1').text('This text will fade out and return').fadeOut(3000).fadeIn(3000).slideUp(1000).slideDown(1000);
+</script> 
+</body> 
+</html>
