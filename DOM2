@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title> Изучаем DOM, Motherfucker!</title> 
+</head>
+<body> 
+<h1 id='main-heading'> Hello, dudes! </h1> 
+<script src='http://code.jquery.com/jquery-2.1.0.js'></script> 
+<script> 
+/* let headingElement = document.getElementById ('main-heading');
+console.log (headingElement.innerHTML);
+let newHeadingText = prompt ('Write new headline: ');
+headingElement.innerHTML = newHeadingText;
+$('#main-heading').text(newHeadingText); */
+
+// $('body').append('<p>This is new text</p>');
+/* for (let i=0; i<3; i++) {
+	let hobby = prompt ('Call one of the your hobbies');
+	$('body').append('<p>' + hobby + '</p>');
+} */
+
+//$('h1').fadeTo(2000, 0.3);
+
+/* function timeUp (){
+	alert ('Time is up, bastard.');
+};
+setTimeout (timeUp, 3000); */
+
+/* function doMyStuffAgain () {
+	alert ('Hey, man, work harder!');
+};
+let timeoutId = setTimeout (doMyStuffAgain, 6000);
+clearTimeout(timeoutId); */
+let counter = 1;
+function printMessage () {
+	alert ('You have been looking already in a console ' + counter + ' second(s)');
+	counter++;
+};
+let intervalId = setInterval(printMessage, 1000);
+clearInterval(intervalId);
+
+/* $('#main-heading').text('My Friends');
+let friendMassive = ['Ilya','Masha','Elena','Vlad'];
+for (i=0; i<4; i++) {
+	$('body').append('<p>' + friendMassive[i] + '</p>');
+}
+$('p').append(' the best!'); */
+
+/* for (i=1; i<6; i++) {
+	$('#main-heading').fadeIn(1000).fadeOut(1000).delay(1000*i);
+} */
+
+
+// $('p').hide(1000).fadeIn(1000);
+
+/* for (let j=0; j<1; j++) {
+	$('h1').text('This text will fade out and return. Slide up and down').fadeOut(3000).fadeIn(3000).slideUp(1000).slideDown(1000).hide(1000).show(1000);
+}
+*/
+</script> 
+</body> 
+</html>
