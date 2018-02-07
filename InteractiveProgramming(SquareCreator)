@@ -4,7 +4,7 @@
     <meta charset='UTF-8'>
     <title>Интерактивное программирование</title>
 </head>
-
+/* sescribtion: Heading is going like square, stopping on click. */
 <body>
     <h1 id='heading' style="position: relative; top: -20px"> Hello, world!</h1>
     <script src='https://code.jquery.com/jquery-2.1.0.js'> </script>
