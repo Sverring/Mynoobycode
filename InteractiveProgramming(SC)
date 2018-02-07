@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Интерактивное программирование</title>
+</head>
+
+<body>
+    <h1 id='heading' style="position: relative; top: -20px"> Hello, world!</h1>
+    <script src='https://code.jquery.com/jquery-2.1.0.js'> </script>
+    <script>
+            let topOffset = 0;
+            let rightOffset = 0;
+            let bottomOffset = 200;
+            let leftOffset = 200;
+            let interval = setInterval(squareCreator, 30);
+            let onOrOff = true;
+
+            function squareCreator () { 
+            realisation(topOffset,rightOffset,bottomOffset,leftOffset);
+            };
+       
+            $('html').click(function (){
+                if(onOrOff){
+                    clearInterval(interval);
+                    onOrOff = false; // клик останавливает
+                    interval = null;
+                } else {
+                    onOrOff = true; 
+                    interval = setInterval(squareCreator, 30);
+                }
+            });
+
+/*============ methods ========== */
+
+        function realisation(one,two,three,four) {
+            if(one < 200){
+                topSide();
+            } else if (two < 200){
+                rightSide();
+            } else if (three > 0) {
+                bottomSide();
+            } else if (four > 0) {
+                leftSide();
+            } else {
+                update();
+            }
+        };
+
+        function topSide () {
+           let top = $('#heading').offset ({
+            left: topOffset });
+            topOffset++;
+
+            console.log("top")
+        };
+
+        function rightSide () {
+            let right = $('#heading').offset ({
+                top: rightOffset });
+            rightOffset++;
+
+            console.log("right")
+        };
+
+        function bottomSide () {
+            let bottom = $('#heading').offset ({
+                left: bottomOffset });
+            bottomOffset--;
+
+            console.log("bottom")
+        };
+
+        function leftSide () {
+            let left = $('#heading').offset ({
+                top: leftOffset });
+            leftOffset--;
+
+            console.log("left")
+        };
+
+        function update() {
+            topOffset = 0;
+            rightOffset = 0;
+            bottomOffset = 200;
+            leftOffset = 200;
+        };
+    </script>
+</body>
+</html>
