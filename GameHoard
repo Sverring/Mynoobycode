@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Интерактивное программирование</title>
+</head>
+
+<body>
+    <!-- <h1 id='heading'> Hello, hoard!</h1> -->
+
+    <!-- ==== red cycle html [CHEAT]==== -->
+    <!-- <div class="red"></div> -->
+
+    <!-- ==== image ==== -->
+    <img id="map" width=800 height=800 src='http://nostarch.com/images/treasuremap.png'>
+
+    <!-- ==== cycle css [CHEAT] ==== -->
+    <!-- <style type="text/css">
+        .red {
+            background-color: red;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            border-radius: 150px;
+        }
+    </style> -->
+    
+    <p id='distance'></p>
+    
+    <script src='https://code.jquery.com/jquery-2.1.0.js'> </script>
+    <script type="text/javascript">
+
+/*======================methods==========================*/
+
+//Получаем случайные координаты клада
+var getRandomNumber = function (size) {
+    return Math.floor(Math.random() * size);
+};
+
+//Вычисляем расстояние от клика до клада
+ var getDistance = function (event, target) {
+      var diffX = event.offsetX - target.x;
+      var diffY = event.offsetY - target.y;
+      return Math.sqrt((diffX * diffX) + (diffY * diffY));
+    };
+
+//Подсказка для понимания расстояния до клада
+function getDistanceHint (distance) {
+    if (distance < 10) {
+        return 'Around a Hell!';
+    } else if (distance < 20) {
+        return 'Hotest!';
+    } else if (distance < 40) {
+        return 'Hotter!';
+    } else if (distance < 80) {
+        return 'Hot!';
+        alert ('Remaining Turns: ' + remainingTurns);
+    } else if (distance < 160) {
+        return 'Cold!';
+        alert ('Remaining Turns: ' + remainingTurns);
+    } else if (distance < 320) {
+        return 'Colder!';
+    } else if (distance < 480) {
+        return 'Almost a middle of search.';
+    } else if (distance < 600) {
+        return 'Not the edge.';
+    } else if (distance < 700) {
+        return 'Very far from the item!';
+    } else {
+        return 'U R frozen.';
+    }
+};
+
+    let width = 800;
+    let height = 800;
+    let clicks = 0;
+    let remainingTurns = 100;
+
+    let target = {
+        x: getRandomNumber(width),
+        y: getRandomNumber(height)
+    };
+
+    /*  ==== cycle js [CHEAT] ==== */
+    /* alert(target["x"] + " : " + target["y"]);
+    $(".red").css("top", target["y"]).css("left",target["x"]); */
+
+//Обработчик кликов добавлен элементу img 'map'
+$('#map').click(function (event) {
+    clicks++;
+    
+    if (clicks > remainingTurns) {
+    alert ('Game over');
+    return;
+    }
+
+    let distance = getDistance(event, target); 
+    var distanceHint = getDistanceHint(distance);
+    alert(distanceHint);
+
+ $('#distance').text(distanceHint); 
+//Поздравление с победой либо с поражением
+ if (distance < 8) {
+    alert ('Hoard is found! Done clicks: ' + clicks);
+ }
+});
+     </script>
+</body>
+</html>
