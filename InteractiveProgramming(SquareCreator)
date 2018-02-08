@@ -26,8 +26,7 @@
             $('#heading').click(function () {
                 clearInterval (intervalId);
                     intervalSpeed = intervalSpeed/2;
-                    tryCounter++;
-                    
+                    tryCounter++;          
                 if (tryCounter > 10) { 
                     $('#heading').text('Go home, homie!');
                 } else {
