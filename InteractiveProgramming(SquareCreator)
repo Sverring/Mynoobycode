@@ -4,7 +4,7 @@
     <meta charset='UTF-8'>
     <title>Интерактивное программирование</title>
 </head>
-/* sescribtion: Heading is going like square, stopping on click. */
+
 <body>
     <h1 id='heading' style="position: relative; top: -20px"> Hello, world!</h1>
     <script src='https://code.jquery.com/jquery-2.1.0.js'> </script>
@@ -13,23 +13,29 @@
             let rightOffset = 0;
             let bottomOffset = 200;
             let leftOffset = 200;
-            let interval = setInterval(squareCreator, 30);
+            //let interval = setInterval(squareCreator, 30);
             let onOrOff = true;
+            let tryCounter = 0;
+            let intervalSpeed = 100;
+            let intervalId = setInterval(main, intervalSpeed);
+         
+            function main() {
+                realisation(topOffset,rightOffset,bottomOffset,leftOffset);
+            }
 
-            function squareCreator () { 
-            realisation(topOffset,rightOffset,bottomOffset,leftOffset);
-            };
-       
-            $('html').click(function (){
-                if(onOrOff){
-                    clearInterval(interval);
-                    onOrOff = false; // клик останавливает
-                    interval = null;
+            $('#heading').click(function () {
+                clearInterval (intervalId);
+                    intervalSpeed = intervalSpeed/2;
+                    tryCounter++;
+                    
+                if (tryCounter > 10) { 
+                    $('#heading').text('Go home, homie!');
                 } else {
-                    onOrOff = true; 
-                    interval = setInterval(squareCreator, 30);
-                }
+                     $('#heading').text('Hello, world!' + ' ' + tryCounter);
+                     intervalId = setInterval(main, intervalSpeed);  
+                 }              
             });
+
 
 /*============ methods ========== */
 
