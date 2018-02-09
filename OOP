@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>12 Chapter</title>
+</head>
+<body>
+<script>
+let dog = {
+	name: 'Juna',
+	legs: 4,
+	isAwesome: true,
+	sound:'Give me some eat.(looking sorrowly)',
+	speak: speak,
+};
+dog.name;
+dog.age = 6;
+dog.bark = function () {
+	console.log('Augh-augh! My name is ' + this.name + '!');
+};
+dog.bark(); 
+function speak () {
+	console.log(this.sound + '! Call me ' + this.name + '!');
+};
+let human = {
+	sound: 'Shit!',
+	name: 'Ilya',
+	speak: speak,
+};
+human.speak();
+dog.speak();
+
+</script>
+</body>
+</html>
