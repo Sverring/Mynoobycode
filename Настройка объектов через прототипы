@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+	<title> Races </title>
+</head>
+<body>
+<script src=' https://code.jquery.com/jquery-2.1.0.js '> </script>
+<script>
+function Car (x,y) {
+	this.x = x;
+	this.y = y;
+   //this.beep = function() {
+      //  console.log('');
+    //}
+};
+/*
+class Car1 {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    beep() {
+    }
+}
+const a = new Car(1,2);
+a.beep();
+const b = new Car1(1,2); */
+
+Car.prototype.draw = function () {
+	let carHtml = '<img src="http://nostarch.com/images/car.png">';
+
+// Я не могу просто так взять и засунуть картинку
+// в функцию. Для этого я использую Jquery, чтобы создать тэг.
+    this.carElement = $(carHtml);
+
+    this.carElement.css({
+        position: 'absolute',
+        left: car.x,
+        top: car.y
+    });
+$('body').append(this.carElement);
+};
+let tesla = new Car (20, 20);
+let nissan = new Car (100, 200);
+tesla.draw ();
+nissan.draw ();
+</script>
+</body>
+</html>
