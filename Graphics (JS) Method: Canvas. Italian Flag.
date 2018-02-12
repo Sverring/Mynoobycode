@@ -16,6 +16,14 @@ ctx.fillStyle = 'FloralWhite';
 ctx.fillRect(50, 0, 50, 100);
 ctx.fillStyle = 'FireBrick';
 ctx.fillRect(100, 0, 50, 100);
+
+/* Uncomment this to make lines:
+ctx.strokeStyle = 'ForestGreen';
+ctx.strokeRect(0, 0, 50, 100);
+ctx.strokeStyle = 'FloralWhite';
+ctx.strokeRect(50, 0, 50, 100);
+ctx.strokeStyle = 'FireBrick';
+ctx.strokeRect(100, 0, 50, 100); */
 </script>
 </body>
 </html>
