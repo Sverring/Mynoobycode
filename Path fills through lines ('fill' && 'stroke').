@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+	<title> Canvas </title>
+</head>
+<body>
+<canvas id='canvas' width='400' height='400'></canvas>
+
+<script>
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
+
+function mainFigure () {
+    ctx.fillStyle = 'Purple';
+    ctx.lineWidth = 5;
+
+    ctx.beginPath();
+    ctx.moveTo(10, 60);
+    ctx.lineTo(10, 10);
+    ctx.lineTo(35, 35);
+    ctx.lineTo(60, 10);
+    ctx.lineTo(60, 60);
+    ctx.lineTo(35, 35);
+    ctx.lineTo(10, 60);
+    ctx.fill();
+}; 
+
+function lines () {
+    ctx.strokeStyle = 'Turquoise';
+    ctx.lineWidth = 5;  
+
+    ctx.beginPath();
+    ctx.moveTo(10, 10);
+    ctx.lineTo(60, 10);
+
+    ctx.moveTo(10, 60);
+    ctx.lineTo(60, 60);
+    ctx.stroke();
+};
+
+mainFigure();
+lines();
+</script>
+</body>
+</html>
