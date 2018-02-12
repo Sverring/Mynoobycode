@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+	<title> Canvas </title>
+</head>
+<body>
+<canvas id='canvas' width='200' height='200'></canvas>
+
+<script>
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
+ctx.fillStyle = 'ForestGreen';
+ctx.fillRect(0, 0, 50, 100);
+ctx.fillStyle = 'FloralWhite';
+ctx.fillRect(50, 0, 50, 100);
+ctx.fillStyle = 'FireBrick';
+ctx.fillRect(100, 0, 50, 100);
+</script>
+</body>
+</html>
