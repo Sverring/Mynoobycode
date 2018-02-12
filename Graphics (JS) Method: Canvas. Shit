@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+	<title> Canvas </title>
+</head>
+<body>
+<canvas id='canvas' width='400' height='400'></canvas>
+
+<script>
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
+ctx.strokeStyle = 'Turquoise';
+ctx.lineWidth = 10;
+/* ctx.beginPath();
+ctx.moveTo(20,20);
+ctx.lineTo(120,120);
+ctx.moveTo(120,20);
+ctx.lineTo(20,120);
+ctx.stroke();
+*/
+ctx.beginPath();
+//first letter
+ctx.moveTo(55, 10);
+ctx.lineTo(5, 10);
+
+ctx.moveTo(10, 10);
+ctx.lineTo(10, 50);
+
+ctx.moveTo(5, 50);
+ctx.lineTo(55, 50);
+
+ctx.moveTo(50, 50);
+ctx.lineTo(50, 90);
+
+ctx.moveTo(55, 90);
+ctx.lineTo(5, 90);
+
+//Second letter
+ctx.moveTo(70, 5);
+ctx.lineTo(70, 95);
+
+ctx.moveTo(70, 50);
+ctx.lineTo(110, 50);
+
+ctx.moveTo(110, 5);
+ctx.lineTo(110, 95);
+
+//Third letter
+ctx.moveTo(125, 10);
+ctx.lineTo(170, 10);
+
+ctx.moveTo(147.5, 10);
+ctx.lineTo(147.5, 90);
+
+ctx.moveTo(125, 90);
+ctx.lineTo(170, 90);
+
+//Fourth letter
+ctx.moveTo(180, 10);
+ctx.lineTo(220, 10);
+
+ctx.moveTo(200, 10);
+ctx.lineTo(200, 95);
+
+//Exclamation point
+ctx.moveTo(235, 5);
+ctx.lineTo(235, 75);
+
+ctx.moveTo(235, 85);
+ctx.lineTo(235, 95);
+ctx.stroke();
+</script>
+</body>
+</html>
