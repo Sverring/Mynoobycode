@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+	<title> Races </title>
+</head>
+<body>
+<script src=' https://code.jquery.com/jquery-2.1.0.js '> </script>
+<script>
+function Car (x,y) {
+	this.x = x;
+	this.y = y;
+    this.draw();
+    this.speed = 5;
+};
+
+Car.prototype.draw = function () {
+	let carHtml = '<img src="http://nostarch.com/images/car.png">';
+
+// Я не могу просто так взять и засунуть картинку
+// в функцию. Для этого я использую Jquery.
+    this.carElement = $(carHtml);
+
+    this.carElement.css({
+        position: 'absolute',
+        left: this.x,
+        top: this.y
+    });
+    $('body').append(this.carElement);
+};
+
+Car.prototype.moveRight = function (distance) {
+    this.x += distance;
+    this.carElement.css({
+        left: this.x,
+        top: this.y
+    });
+};
+Car.prototype.moveLeft = function (distance) {
+    this.x -= distance; 
+    this.carElement.css({
+        left: this.x,
+        top: this.y
+    });
+};
+Car.prototype.moveUp = function (distance) {
+    this.y -= distance;
+    this.carElement.css({
+        left: this.x,
+        top: this.y
+    });
+};
+Car.prototype.moveDown = function (distance) {
+    this.y += distance;
+    this.carElement.css({
+        left: this.x,
+        top: this.y
+    });
+};
+let tesla = new Car (20, 100);
+let nissan = new Car (20, 200);
+let mazda = new Car (20, 300);
+
+setInterval(function() {nissan.moveRight(Math.floor(Math.random()*20)), tesla.moveRight(Math.floor(Math.random()*20)), mazda.moveRight(Math.floor(Math.random()*20))}, 30);
+
+</script>
+</body>
+</html>
