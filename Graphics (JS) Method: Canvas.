@@ -10,6 +10,7 @@
 <script>
 let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext('2d');
+ctx.fillStyle = 'SkyBlue';
 ctx.fillRect(30, 0, 50, 50);
 ctx.fillRect(50, 50, 10, 20);
 ctx.fillRect(5, 70, 100, 10);
