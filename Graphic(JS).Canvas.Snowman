@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+	<title> Canvas </title>
+</head>
+<body>
+<canvas id='canvas' width='400' height='400'></canvas>
+
+<script>
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
+
+function circle (x, y, radius, fillCircle) {
+     ctx.beginPath();
+     ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+   
+     if (fillCircle == true) {
+        //let colour = ctx.fillStyle;
+        ctx.fill();
+    } else {
+        //let colour = ctx.strokeStyle;
+        ctx.stroke();
+    };   
+};
+ctx.lineWidth = 4;
+
+//head
+ctx.strokeStyle = 'DarkRed';
+circle(100, 100, 30, false);
+//1st eye
+ctx.fillStyle = 'DarkOrange';
+circle(90, 95, 5, true);
+//2nd eye
+ctx.fillStyle = 'DarkOrange';
+circle(110, 95, 5, true);
+//nose
+ctx.fillStyle = 'Indigo';
+circle(100, 105, 5, true);
+
+//body
+ctx.strokeStyle = 'DarkRed';
+circle(100, 170, 40, false);
+//1st point
+ctx.fillStyle = 'DarkOrange';
+circle(100, 150, 5, true);
+//2nd point
+ctx.fillStyle = 'DarkOrange';
+circle(100, 170, 5, true);
+//3rd point
+ctx.fillStyle = 'DarkOrange';
+circle(100, 190, 5, true);
+
+</script>
+</body>
+</html>
