@@ -12,44 +12,38 @@ let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext('2d');
 function drawSnowman (mainX, mainY) {
 
-    function circle (x, y, radius, fillCircle) {
+    
+    function circle (x, y, radius, colour, fillCircle) {
         ctx.lineWidth = 4;
+
         ctx.beginPath();
         ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-       
         if (fillCircle == true) {
+            ctx.fillStyle=colour;
             ctx.fill();
         } else {
+            ctx.strokeStyle=colour;
             ctx.stroke();
         };   
     };
 
     //head
-    ctx.strokeStyle = 'DarkRed';
-    circle(mainX, mainY, 30, false);
-
+    circle(mainX, mainY, 30, 'Purple', false);
     //1st eye
-    ctx.fillStyle = 'DarkOrange';
-    circle(mainX+10, mainY-5, 5, true);
+    circle(mainX+10, mainY-5, 5, 'DarkOrange', true);
     //2nd eye
-    ctx.fillStyle = 'DarkOrange';
-    circle(mainX-10, mainY-5, 5, true);
+    circle(mainX-10, mainY-5, 5, 'DarkOrange', true);
     //nose
-    ctx.fillStyle = 'Indigo';
-    circle(mainX, mainY+5, 5, true);
+    circle(mainX, mainY+5, 5, 'Indigo', true);
 
     //body
-    ctx.strokeStyle = 'DarkRed';
-    circle(mainX, mainY+70, 40, false);
+    circle(mainX, mainY+70, 40, 'Purple', false);
     //1st point
-    ctx.fillStyle = 'DarkOrange';
-    circle(mainX, mainY+50, 5, true);
+    circle(mainX, mainY+50, 5, 'DarkOrange', true);
     //2nd point
-    ctx.fillStyle = 'DarkOrange';
-    circle(mainX, mainY+70, 5, true);
+    circle(mainX, mainY+70, 5, 'DarkOrange', true);
     //3rd point
-    ctx.fillStyle = 'DarkOrange';
-    circle(mainX, mainY+90, 5, true);
+    circle(mainX, mainY+90, 5, 'DarkOrange', true);
 };
 drawSnowman(50, 50);
 </script>
