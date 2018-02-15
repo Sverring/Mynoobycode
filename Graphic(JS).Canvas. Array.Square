@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+	<title> Canvas </title>
+</head>
+<body>
+<canvas id='canvas' width='400' height='400'></canvas>
+
+<script>
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
+
+function drawPoints () {
+    let points = [[50, 50], [50, 100], [100, 100], [100, 50],[50, 50]];
+    let mysteryPoints = [[50, 50], [50, 100], [25, 120], [100, 50], [70, 90], [100, 90], [70, 120]];
+    ctx.beginPath();
+    ctx.moveTo(points[0][0],points[0][1]);
+        for (let i=1; i < points.length; i++) {
+            ctx.lineTo(points[i][0], points[i][1])
+        };
+    ctx.moveTo(mysteryPoints[0][0],mysteryPoints[0][1]);
+        for (let i=1; i < mysteryPoints.length; i++) {
+            ctx.lineTo(mysteryPoints[i][0], mysteryPoints[i][1])
+        };
+    ctx.stroke();
+};
+drawPoints();
+</script>
+</body>
+</html>
