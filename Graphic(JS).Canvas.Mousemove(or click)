@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+	<title> Canvas Click </title>
+</head>
+<body>
+<canvas id='canvas' width='400' height='400'></canvas>
+<script src='https://code.jquery.com/jquery-2.1.0.js'> </script>
+<script>
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
+        
+$('html').mousemove /* click */ (function Dealer (event){
+    //alert ('Click! ' + event.pageX + ' ' + event.pageY);
+    $('#heading').offset ({
+        left: event.pageX,
+        top: event.pageY
+    });
+    function circle (x, y, radius, colour, fillCircle) {
+        ctx.lineWidth = 4;
+
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+        if (fillCircle == true) {
+            ctx.fillStyle=colour;
+            ctx.fill();
+        } else {
+            ctx.strokeStyle=colour;
+            ctx.stroke();
+        };   
+    };
+
+    //head
+    circle(event.pageX, event.pageY, 30, 'Aquamarine', false);
+});    
+</script>
+</body>
+</html>
