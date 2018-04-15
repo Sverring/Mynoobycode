@@ -1,0 +1,74 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6 rem;
+  color: #263300;
+}
+
+.wrapper {
+  width: 920px; 
+  margin: 0 auto;
+  text-align:center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    text-align: inherit;
+    margin: 0
+
+}
+
+
+ul li {
+    
+}
+
+ul li:
+}
+
+ul li:
+
+ul li.checked {
+    
+
+.close {
+    
+}
+
+.close:hover {
+   
+}
+
+.header {
+    
+}
+
+
+}
+
+input {
+  border: #803300 solid 2px;
+  padding: 7px;
+}
+
+#in:focus {
+  background: #ffe; /* Цвет фона */
+  border: 2px solid #ff8533; 
+}
+
+.addBtn {
+    position:relative;
+    margin-left: 20px;
+    border: 2px solid #263300;
+    padding: 5px;
+}
+
+.addBtn:hover {
+   
+}
