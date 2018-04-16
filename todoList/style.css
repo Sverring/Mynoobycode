@@ -6,14 +6,14 @@
 
 body {
   font-family: 'Varela Round', sans-serif;
-  line-height: 1.6 rem;
+  line-height:normal;
   color: #263300;
 }
 
 .wrapper {
   width: 920px; 
-  margin: 0 auto;
   text-align:center;
+  
 }
 
 ul {
@@ -36,6 +36,10 @@ ul li:
 
 ul li.checked {
     
+span.addBtn {
+  
+  margin-bottom:-1px;
+  }
 
 .close {
     
@@ -55,20 +59,31 @@ ul li.checked {
 input {
   border: #803300 solid 2px;
   padding: 7px;
+  margin-top: -2px;
+  line-height: normal;
+ 
 }
 
 #in:focus {
   background: #ffe; /* Цвет фона */
   border: 2px solid #ff8533; 
+  /* delete fcking blue line */
+  outline: none;
+}
+
+input: hover {
+color: #ff8080;
 }
 
 .addBtn {
-    position:relative;
     margin-left: 20px;
     border: 2px solid #263300;
-    padding: 5px;
+    padding: 6px;
+    background: #d9d9d9;
+    margin-bottom: -10px;
+
 }
 
 .addBtn:hover {
-   
+    background: #bfff80;
 }
