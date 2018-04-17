@@ -1,4 +1,4 @@
- var quest = document.querySelector('ul');
+  var quest = document.querySelector('ul');
              quest.addEventListener('click', function (event) {
                   if (event.target.tagName === 'LI') {
                      event.target.classlist.toggle('checked');
